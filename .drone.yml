@@ -42,7 +42,7 @@ steps:
     purge: true
 trigger:
   branch:
-    - feature/*
+    - "*/*"
   event:
     exclude:
       - pull_request
@@ -86,6 +86,6 @@ trigger:
   - pull_request
 ---
 kind: signature
-hmac: 9e13d9b26bc38ddb2c80a9533b1acded13d8c2b60eeb972f1cf42a81bb741e65
+hmac: e6d02358e30d7a03faf8477e6b8f6f4bd8fcb9858568364d8956214a33999873
 
 ...
