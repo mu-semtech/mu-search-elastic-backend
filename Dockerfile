@@ -1,4 +1,4 @@
-FROM docker.elastic.co/elasticsearch/elasticsearch:7.2.0
+FROM docker.elastic.co/elasticsearch/elasticsearch:7.17.6
 
 LABEL maintainer="Aad Versteden <aad.versteden@redpencil.io>"
 
