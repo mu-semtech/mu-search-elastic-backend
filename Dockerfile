@@ -2,7 +2,6 @@ FROM docker.elastic.co/elasticsearch/elasticsearch:9.2.0
 
 LABEL maintainer="Aad Versteden <aad.versteden@redpencil.io>"
 
-ENV TAKE_FILE_OWNERSHIP=/usr/share/elasticsearch/data
 ENV MAX_MAP_COUNT=262144
 ENV ES_JAVA_OPTS="-Xms2g -Xmx2g"
 ENV discovery.type=single-node
