@@ -8,3 +8,8 @@ ENV discovery.type=single-node
 
 RUN printf "\nxpack.security.enabled: false\nxpack.security.enrollment.enabled: false\n" >> /usr/share/elasticsearch/config/elasticsearch.yml
 RUN sed -i '/-Des.bundled_jdk*/a    -Dlog4j2.formatMsgNoLookups=true \\' /usr/share/elasticsearch/bin/elasticsearch
+
+ADD ./startup.sh /startup.sh
+USER root
+ENTRYPOINT ["/startup.sh"]
+# ENTRYPOINT ["/bin/sh"]
