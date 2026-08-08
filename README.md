@@ -15,8 +15,6 @@ are commonly expected to be available for mu-search.
 services:
   elasticsearch:
     image: semtech/mu-search-elastic-backend:1.2.0
-    environment:
-      discovery.type: "single-node"
     volumes:
       - ./data/elasticsearch/:/usr/share/elasticsearch/data
 ```
