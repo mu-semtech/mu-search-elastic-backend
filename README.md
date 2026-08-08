@@ -14,7 +14,7 @@ are commonly expected to be available for mu-search.
 ``` yaml
 services:
   elasticsearch:
-    image: semtech/mu-search-elastic-backend:1.2.0
+    image: semtech/mu-search-elastic-backend:1.3.1
     volumes:
       - ./data/elasticsearch/:/usr/share/elasticsearch/data
 ```
@@ -27,7 +27,7 @@ E.g.
 ```yaml
 services:
   elasticsearch:
-    image: semtech/mu-search-elastic-backend:1.2.0
+    image: semtech/mu-search-elastic-backend:1.3.1
     environment:
       http.max_content_length: 2000M # Set to 2GB
 ```
@@ -41,7 +41,7 @@ E.g.
 ```yaml
 services:
   elasticsearch:
-    image: semtech/mu-search-elastic-backend:1.2.0
+    image: semtech/mu-search-elastic-backend:1.3.1
     environment:
       ES_JAVA_OPTS: "-Xms16g -Xmx16g"
 ```
